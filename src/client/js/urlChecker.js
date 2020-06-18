@@ -1,15 +1,10 @@
 function checkForUrl(inputText) {
-    console.log("::: Running checkForName :::", inputText);
-    let names = [
-        "Picard",
-        "Janeway",
-        "Kirk",
-        "Archer",
-        "Georgiou"
-    ]
+    console.log("::: Running checkForUrl :::", inputText);
 
-    if (names.includes(inputText)) {
-        alert("Welcome, Captain!")
+    if (url == '' || url == null) {
+        alert("Please enter a valid URL")
+    } else {
+        return true;
     }
 }
 
