@@ -27,13 +27,14 @@ app.listen(8081, function () {
 })
 
 //Get Data response
-app.get('/test', function (req, res) {
+app.get('/', function (req, res) {
     res.send(mockAPIResponse)
 })
 
 //Post Data response
 app.post('/api', async (req, res) => {
     const formText = req.body.url;
+    console.log(res)
 
     try {
         textapi.sentiment({
