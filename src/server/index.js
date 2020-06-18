@@ -34,7 +34,7 @@ app.get('/', function (req, res) {
 //Post Data response
 app.post('/api', async (req, res) => {
     const formText = req.body.url;
-    console.log(res)
+    console.log(formText)
 
     try {
         textapi.sentiment({
