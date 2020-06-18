@@ -26,6 +26,26 @@ app.listen(8081, function () {
     console.log('Example app listening on port 8081!')
 })
 
+//Get Data response
 app.get('/test', function (req, res) {
     res.send(mockAPIResponse)
+})
+
+//Post Data response
+app.post('/api', async (req, res) => {
+    const formText = req.body.url;
+
+    try {
+        textapi.sentiment({
+                'url': formText
+            },
+            function (err, res) {
+                if (err === null) {
+                    console.log(res);
+                    res.send(res);
+                }
+            });
+    } catch (err) {
+        console.error(err)
+    }
 })
