@@ -2,13 +2,23 @@ function handleSubmit(event) {
     event.preventDefault()
 
     // check what text was put into the form field
-    let formText = document.getElementById('name').value
-    Client.checkForName(formText)
+    let formText = document.getElementById('url').value
+    Client.checkForUrl(formText)
 
     console.log("::: Form Submitted :::")
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=94070,US&units=imperial&APPID=e131d5ea093dbc7fc2da1a0496c042c8')
+    fetch('http://localhost:8081/api', {
+            method: 'POST',
+            mode: 'cors',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify({
+                url: formText
+            }),
+        })
         .then(res => res.json())
         .then(function (res) {
+            console.log("::: Updating UI :::")
             document.getElementById('results').innerHTML = `The weather now is ${res.main.temp} and it looks like ${res.weather[0].description}`
 
             console.log(`::: API DATA::: ${res}`)
