@@ -1,7 +1,7 @@
 function checkForUrl(inputText) {
     console.log("::: Running checkForUrl :::", inputText);
 
-    if (url == '' || url == null) {
+    if (inputText == '' || inputText == null) {
         alert("Please enter a valid URL")
     } else {
         return true;
