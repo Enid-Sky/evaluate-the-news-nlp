@@ -1,6 +1,6 @@
 import {
-  checkForName
-} from './js/nameChecker'
+  checkForUrl
+} from './js/urlChecker'
 import {
   handleSubmit
 } from './js/formHandler'
@@ -17,6 +17,6 @@ alert("I EXIST")
 console.log("CHANGE!!");
 
 export {
-  checkForName,
+  checkForUrl,
   handleSubmit
 }
