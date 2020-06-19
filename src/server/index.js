@@ -9,10 +9,24 @@ var textapi = new aylien({
     application_id: process.env.API_ID,
     application_key: process.env.API_KEY
 });
+console.log(textapi)
 
 const app = express()
 
 app.use(express.static('dist'))
+
+/* Middleware*/
+//Here we are configuring express to use body-parser as middle-ware.
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({
+    extended: false
+}));
+app.use(bodyParser.json());
+
+
+// Cors for cross origin allowance
+const cors = require('cors');
+app.use(cors());
 
 console.log(__dirname)
 
@@ -26,10 +40,6 @@ app.listen(8081, function () {
     console.log('Example app listening on port 8081!')
 })
 
-//Get Data response
-app.get('/', function (req, res) {
-    res.send(mockAPIResponse)
-})
 
 //Post Data response
 app.post('/api', async (req, res) => {
