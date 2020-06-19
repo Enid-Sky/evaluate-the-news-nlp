@@ -3,10 +3,11 @@ function handleSubmit(event) {
 
     // check what text was put into the form field
     let formText = document.getElementById('url').value
+    console.log(`This is the url + ${formText}`)
     Client.checkForUrl(formText)
 
-    console.log("::: Form Submitted :::")
-    fetch('http://localhost:8081/api', {
+    console.log("::: Form Submitted...checking validation :::")
+    fetch('/api', {
             method: 'POST',
             mode: 'cors',
             headers: {
@@ -19,12 +20,14 @@ function handleSubmit(event) {
         .then(res => res.json())
         .then(function (res) {
             console.log("::: Updating UI :::")
-            document.getElementById('results').innerHTML = `The weather now is ${res.main.temp} and it looks like ${res.weather[0].description}`
-
-            console.log(`::: API DATA::: ${res}`)
+            document.getElementById('results').innerHTML = `Text: ${res.text} <p> Subjectivity ${res.subjectivity} <p> Polarity: ${res.polarity}`
+            document.getElementById('url').value = ''
         })
+
 }
+
 
 export {
     handleSubmit
+
 }
