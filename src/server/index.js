@@ -1,3 +1,5 @@
+projectData = {}
+
 const dotenv = require('dotenv')
 dotenv.config();
 var path = require('path')
@@ -9,7 +11,7 @@ var textapi = new aylien({
     application_id: process.env.API_ID,
     application_key: process.env.API_KEY
 });
-console.log(textapi)
+
 
 const app = express()
 
@@ -41,19 +43,17 @@ app.listen(8081, function () {
 })
 
 
+
 //Post Data response
 app.post('/api', async (req, res) => {
-    const formText = req.body.url;
-    console.log(formText)
-
+    const data = req.body.url;
     try {
         textapi.sentiment({
-                'url': formText
+                'url': data
             },
-            function (err, res) {
-                if (err === null) {
-                    console.log(res);
-                    res.send(res);
+            function (error, response) {
+                if (error === null) {
+                    res.send(response)
                 }
             });
     } catch (err) {
