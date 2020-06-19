@@ -4,9 +4,6 @@ import {
 import {
   handleSubmit
 } from './js/formHandler'
-import {
-  whatIf
-} from './js/formHandler'
 
 import './styles/resets.scss'
 import './styles/base.scss'
