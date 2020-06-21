@@ -7,20 +7,31 @@ Project Description: The project consists in developing a web application that a
 
 Objective: Implement the application using the acquired knowledge of Webpack configuration for developing in a development and production environments. Also, use different loaders and plugins to enhance productivity and the advantages of Webpack.
 
+
+## Express and Webpack:
+
+Node and express will be the webserver and routing of choice, and webpack will be the build tool of choice. Using webpack, you have the option of building both development and production environments, each with their own set of tools and commands with package.json scripts.
+
 ## Installation
 
     - npm install: for installing all devDependencies and dependencies of the package.json
 
+## Run in development mode:
 
-## Package scripts for Webpack Configurations:
+npm run build-dev
 
-Node and express will be the webserver and routing of choice, and webpack will be the build tool of choice. Using webpack, you have the option of building both development and production environments, each with their own set of tools and commands with package.json scripts.
+## Run in production mode:
 
-    - npm run build-dev: for building the application in developer mode()
-    - npm run build-prod: for building the application in production mode().
-    - npm run start: for running application in production mode on server using port 8081.
-    - npm jest-test: for running jest tests
-    - CTRL + C: To stop
+npm run build-prod
+npm run start
+
+## Run JEST tests
+
+npm jest-test
+
+## Stop application
+
+CTRL + C
   
 
 
