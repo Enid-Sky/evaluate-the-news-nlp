@@ -14,24 +14,24 @@ Node and express will be the webserver and routing of choice, and webpack will b
 
 ## Installation
 
-    - npm install: for installing all devDependencies and dependencies of the package.json
+npm install: for installing all devDependencies and dependencies of the package.json
 
 ## Run in development mode:
 
-npm run build-dev
+`npm run build-dev`
 
 ## Run in production mode:
 
-npm run build-prod
-npm run start
+`npm run build-prod`
+`npm run start`
 
 ## Run JEST tests
 
-npm jest-test
+`npm jest-test`
 
 ## Stop application
 
-CTRL + C
+`CTRL + C`
   
 
 
