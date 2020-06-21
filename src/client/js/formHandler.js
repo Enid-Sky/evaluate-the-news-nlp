@@ -20,7 +20,9 @@ function handleSubmit(event) {
         .then(res => res.json())
         .then(function (res) {
             console.log("::: Updating UI :::")
-            document.getElementById('results').innerHTML = `Text: ${res.text} <p> Subjectivity ${res.subjectivity} <p> Polarity: ${res.polarity}`
+            document.getElementById('text').innerHTML = res.text
+            document.getElementById('subjectivity').innerHTML = res.subjectivity
+            document.getElementById('polarity').innerHTML = res.polarity
             document.getElementById('url').value = ''
         })
 
