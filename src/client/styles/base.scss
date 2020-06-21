@@ -1,14 +1,71 @@
+$color-primary: #ffe6cc;
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: $color-primary;
+    font-family: Open sans, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: initial;
 }
 
 main {
     flex: 2;
+    margin: 0 50px 0 50px;
 }
 
 section {
     max-width: 800px;
-    margin: 50px auto;
+    margin: 100px auto;
+}
+
+h1 {
+    font-size: 3em;
+    padding: 30px;
+    text-align: center;
+    font-family: Oswald, Open sans
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+    font-family: Oswald, Open sans
+}
+
+h3 {
+    font-size: 1.2em;
+    padding: 20px;
+    font-family: Oswald, Open sans
+}
+
+h4 {
+    font-family: Oswald, sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 24px;
+
+}
+
+p {
+    font-family: 'Open Sans' !important;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: initial;
+}
+
+.senti {
+    font-family: museoModerno;
+    font-size: 2em;
 }
