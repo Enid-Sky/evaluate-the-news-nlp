@@ -1,6 +1,6 @@
 # Evaluate-a-News-Article-with_NLP
 
-Udacity Evaluate a News Article with Naturla Language Processing
+Evaluate a News Article with Natural Language Processing
 
 Project Description: The project consists in developing a web application that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites. Using the Sentiment Analysis api from Aylien (https://docs.aylien.com/textapi/endpoints/#sentiment-analysis), it will give back pertinent information about the article, like whether the content is subjective (opinion) or objective (fact-based) and whether it is positive, neutral, or negative in tone.
 
