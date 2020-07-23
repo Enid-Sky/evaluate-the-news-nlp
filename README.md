@@ -2,10 +2,7 @@
 
 Evaluate a News Article with Natural Language Processing
 
-Project Description: The project consists in developing a web application that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites. Using the Sentiment Analysis api from Aylien (https://docs.aylien.com/textapi/endpoints/#sentiment-analysis), it will give back pertinent information about the article, like whether the content is subjective (opinion) or objective (fact-based) and whether it is positive, neutral, or negative in tone.
-
-
-Objective: Implement the application using the acquired knowledge of Webpack configuration for developing in a development and production environments. Also, use different loaders and plugins to enhance productivity and the advantages of Webpack.
+Project Description: The project consists of developing a web application that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites. Using the Sentiment Analysis api from Aylien (https://docs.aylien.com/textapi/endpoints/#sentiment-analysis), it will give back pertinent information about the article, like whether the content is subjective (opinion) or objective (fact-based) and whether it is positive, neutral, or negative in tone.
 
 
 ## Express and Webpack:
