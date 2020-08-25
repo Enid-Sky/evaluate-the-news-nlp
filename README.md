@@ -1,6 +1,8 @@
 # SENTI
 
-Runs SENTIment analysis on your articles using Natural Language Processing via the AYLIEN API.
+## Overview
+
+An asynchronous web app that runs SENTIment analysis on your articles using Natural Language Processing via the AYLIEN API.
 
 ## About AYLIEN
 
