@@ -17,7 +17,18 @@ form {
     background-color: $color-black;
     color: $color-secondary;
     border: none;
+    &:hover {
+        background: rgb(136, 136, 136);
+      }
+      &:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+
 }
+
+
 
 input {
     padding: 5px 20px;
