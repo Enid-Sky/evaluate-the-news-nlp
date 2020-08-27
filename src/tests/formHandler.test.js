@@ -2,6 +2,6 @@ import {
   formHandler
 } from '../client/js/formHandler'
 
-test('formHandler shoudl be defined', () => {
+test('formHandler should be defined', () => {
   expect(typeof formHandler).toBeDefined();
 });
