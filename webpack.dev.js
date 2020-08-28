@@ -1,5 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const HtmlWebPackPlugin = require("html-webpack-plugin")
 const {
     CleanWebpackPlugin
@@ -23,14 +24,14 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: ['style-loader', 'css-loader', 'sass-loader']
+                use: ['miniCSSExtractPlugin.loader', 'css-loader', 'sass-loader']
             },
             {
-                test: /\.(png|PNG|jpg|JPG|gif)$/,
+                test: /\.jpg$/,
                 loader: 'file-loader'
             },
             {
-                test: /\.(png|jpg|JPG|gif)$/,
+                test: /\.(jpeg|png|jpg|JPG|gif)$/,
                 loader: 'url-loader',
             }
             
@@ -42,6 +43,9 @@ module.exports = {
             template: "./src/client/views/index.html",
             //automatically creates an index.html file in the dist folder using the template reference
             filename: "./index.html",
+        }),
+        new MiniCssExtractPlugin({
+            filename:"[name].css"
         }),
         new CleanWebpackPlugin({
             // Simulate the removal of files
