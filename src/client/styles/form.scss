@@ -5,24 +5,25 @@ $color-black: #212121;
 
 
 form {
-    border: 1px solid #545454;
-    border-radius: 3px;
+    border: 1px solid $color-secondary;
+    border-radius: 5px;
     padding: 40px;
-    background-color: $color-secondary;
+    background-color: $color-black;
 }
 
 
 
 #button {
-    background-color: $color-black;
+    background-color: #c2986f;
+    font-size: 16px;
     color: $color-secondary;
     border: none;
     &:hover {
-        background: rgb(136, 136, 136);
+        background: #c7b17b;
       }
-      &:active {
-        background-color: #3e8e41;
-        box-shadow: 0 5px #666;
+            &:active {
+        background-color:#c7b17b;
+        box-shadow: 0 5px rgb(119, 117, 116);
         transform: translateY(4px);
       }
 
