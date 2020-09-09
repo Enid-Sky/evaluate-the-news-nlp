@@ -21,6 +21,7 @@ function handleSubmit(event) {
         })
         .then(res => res.json())
         .then(function (res) {
+            console.log("::: Updating UI :::")
             if(res.polarity === 'neutral') {
                 let img = document.createElement('img');
                 img.src = './images/neutral.jpg'
@@ -37,13 +38,20 @@ function handleSubmit(event) {
                 document.getElementById('polarityImg').appendChild(img);
             }
             
-            console.log("::: Updating UI :::")
+            
             let txt = document.createElement('txt');
             txt.innerText = 'Article Excerpt:'
+            
+
             document.getElementById('excerpt').appendChild(txt)
-            document.getElementById('text').innerText = res.text
+            excerpt.style.fontSize = '16px';
+
+            document.getElementById('text').innerText = res.text;
             document.getElementById('subjectivity').innerText = `The nature of this article is ${res.subjectivity}.`
+            subjectivity.style.fontSize = '18px';
+    
             document.getElementById('polarity').innerText = `The tone of this article is ${res.polarity}.`
+            polarity.style.fontSize = '18px';
             document.getElementById('url').value = ''
         })
 
