@@ -28,7 +28,7 @@
             <h1 class="welcome">
                 Welcome!
             </h1>
-            </div>
+
             <h2 class="heading-secondary">
                 Sentiment Evaluation App
             </h2>
@@ -37,13 +37,13 @@
                 to run Natural Language Processing (NLP) on articles or blogs found on other websites. Using Sentiment
                 Analysis, you will receive pertinent information about the article, like whether the content is
                 subjective (opinion)
-                or objective (fact-based) and whether it is positive, neutral, or negative in tone. <br>To get started,
+                or objective (fact-based) and whether it is positive, neutral, or negative in tone. To get started,
                 simply copy a news article URL from any website, and paste the URL below.
             </p>
         </section>
         <section>
             <form class="" onsubmit="return Client.handleSubmit(event)">
-                <input id="url" type="text" name="input" value="" onblur="onBlur()" placeholder="url">
+                <input id="url" type="text" name="input" value="" onblur="onBlur()" placeholder="Enter your URL here">
                 <input id="button" type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)"
                     onsubmit="return Client.handleSubmit(event)">
             </form>
