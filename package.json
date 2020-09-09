@@ -14,6 +14,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "aylien_textapi": "^0.7.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
