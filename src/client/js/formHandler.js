@@ -1,3 +1,5 @@
+
+
 function handleSubmit(event) {
     event.preventDefault()
 
@@ -37,11 +39,11 @@ function handleSubmit(event) {
             
             console.log("::: Updating UI :::")
             let txt = document.createElement('txt');
-            txt.innerHTML = 'Article Excerpt:'
+            txt.innerText = 'Article Excerpt:'
             document.getElementById('excerpt').appendChild(txt)
-            document.getElementById('text').innerHTML = res.text
-            document.getElementById('subjectivity').innerHTML = `The nature of this article is ${res.subjectivity}.`
-            document.getElementById('polarity').innerHTML = `The tone of this article is ${res.polarity}.`
+            document.getElementById('text').innerText = res.text
+            document.getElementById('subjectivity').innerText = `The nature of this article is ${res.subjectivity}.`
+            document.getElementById('polarity').innerText = `The tone of this article is ${res.polarity}.`
             document.getElementById('url').value = ''
         })
 
@@ -51,3 +53,5 @@ function handleSubmit(event) {
 export {
     handleSubmit
 }
+
+import { text } from "body-parser"
