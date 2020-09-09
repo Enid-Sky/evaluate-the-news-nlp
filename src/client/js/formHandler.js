@@ -23,28 +23,22 @@ function handleSubmit(event) {
         .then(function (res) {
             console.log("::: Updating UI :::")
             if(res.polarity === 'neutral') {
-                let img = document.createElement('img');
-                img.src = './images/neutral.jpg'
-                document.getElementById('polarityImg').appendChild(img);
+                document.getElementById('polarityImg').innerHTML = "<img src=\"https://images.unsplash.com/photo-1575045113838-6bdaf17765d1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80\" width=\"330px\">";
             }
             if(res.polarity === 'positive'){
-                let img = document.createElement('img');
-                img.src = './images/positive.jpg'
-                document.getElementById('polarityImg').appendChild(img);
+                document.getElementById('polarityImg').innerHTML = "<img src=\"https://images.unsplash.com/photo-1545328951-d483a3667ed0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80\" width=\"330px\">";
             }
             if(res.polarity === 'negative'){
-                let img = document.createElement('img');
-                img.src = './images/negative.jpg'
-                document.getElementById('polarityImg').appendChild(img);
+                document.getElementById('polarityImg').innerHTML = "<img src=\"https://images.unsplash.com/photo-1541848156497-67cadcfbc7de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2106&q=80\" width=\"330px\">";
             }
             
             
-            let txt = document.createElement('txt');
-            txt.innerText = 'Article Excerpt:'
-            
+           // let txt = document.createElement('txt');
+           // txt.innerHTML = 'Article Excerpt:'
 
-            document.getElementById('excerpt').appendChild(txt)
-            excerpt.style.fontSize = '16px';
+
+            //document.getElementById('excerpt').appendChild(txt)
+            //excerpt.style.fontSize = '16px';
 
             document.getElementById('text').innerText = res.text;
             document.getElementById('subjectivity').innerText = `The nature of this article is ${res.subjectivity}.`
