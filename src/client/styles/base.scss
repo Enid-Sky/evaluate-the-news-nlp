@@ -1,3 +1,5 @@
+@import "~animate.css/source/animate.css";
+
 $color-primary: #f7f5f4;
 
 body {
@@ -26,10 +28,13 @@ section {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 4em;
     padding: 30px;
     text-align: center;
-    font-family: Oswald, Open sans
+    font-family: museoModerno;
+    animation-name: bounce;
+    animation-delay: 1s;
+    animation-duration: 2s;
 }
 
 h2 {
@@ -63,6 +68,7 @@ p {
     font-weight: 300;
     line-height: 24px;
     text-transform: initial;
+    padding: 30px 0 0 0;;
 }
 
 .senti {
