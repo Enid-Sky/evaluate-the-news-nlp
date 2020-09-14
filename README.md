@@ -74,7 +74,7 @@ Node and express will be the webserver and routing of choice, and webpack is use
 ![image](https://user-images.githubusercontent.com/43654264/93034141-ecf8bd00-f5ed-11ea-81c2-002089c362ee.png)
 
 *****
-## Neutral Tone
+## Positive Tone
 ![image](https://user-images.githubusercontent.com/43654264/93034275-68f30500-f5ee-11ea-80c3-dd851285a6ca.png)
 
 
