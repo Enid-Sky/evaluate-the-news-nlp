@@ -23,13 +23,13 @@ function handleSubmit(event) {
         .then(function (res) {
             console.log("::: Updating UI :::")
             if(res.polarity === 'neutral') {
-                document.getElementById('polarityImg').innerHTML = "<img src=\"https://i.ibb.co/mJc1WVV/neutraldog.png\" width=\"320px\">";
+                document.getElementById('polarityImg').innerHTML = "<img src=\"https://i.ibb.co/Lv8ZWH2/Untitled-1b.png\" width=\"320px\">";
             }
             if(res.polarity === 'positive'){
-                document.getElementById('polarityImg').innerHTML = "<img src=\"https://i.ibb.co/YdrwMBL/happydog.png\" width=\"320px\">";
+                document.getElementById('polarityImg').innerHTML = "<img src=\"https://i.ibb.co/CHj99xJ/Untitled-2b.png\" width=\"320px\">";
             }
             if(res.polarity === 'negative'){
-                document.getElementById('polarityImg').innerHTML = "<img src=\"https://i.ibb.co/BqPDf0P/baddog.png\" width=\"320px\">";
+                document.getElementById('polarityImg').innerHTML = "<img src=\"https://i.ibb.co/NS6x7hr/Untitled-3b.png\" width=\"320px\">";
             }
 
             document.getElementById('subjectivity').innerText = `The nature of this article is ${res.subjectivity}.`
