@@ -40,7 +40,8 @@ Node and express will be the webserver and routing of choice, and webpack is use
 
 - Get an API Key and ID from [Aylien](https://docs.aylien.com/textapi/#getting-started) and save it to the file called .env:
 
-  `API Key = <You Key>`
+  `API Key = <Your Key>`
+  
   `API ID = <Your ID>`
 
 ## Run in development mode
@@ -50,6 +51,7 @@ Node and express will be the webserver and routing of choice, and webpack is use
 ## Run in production mode
 
 `npm run build-prod`
+
 `npm run start`
 
 ## Run JEST tests
