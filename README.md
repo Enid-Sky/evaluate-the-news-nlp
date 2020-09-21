@@ -40,7 +40,8 @@ Node and express will be the webserver and routing of choice, and webpack is use
 
 - Get an API Key and ID from [Aylien](https://docs.aylien.com/textapi/#getting-started) and save it to the file called .env:
 
-  `API Key = <You Key>`
+  `API Key = <Your Key>`
+  
   `API ID = <Your ID>`
 
 ## Run in development mode
@@ -50,6 +51,7 @@ Node and express will be the webserver and routing of choice, and webpack is use
 ## Run in production mode
 
 `npm run build-prod`
+
 `npm run start`
 
 ## Run JEST tests
@@ -63,19 +65,19 @@ Node and express will be the webserver and routing of choice, and webpack is use
 *****
 
 # Demo
-![image](https://user-images.githubusercontent.com/43654264/93033809-afdffb00-f5ec-11ea-9e1a-0340e3c3c074.png)
+![landingSenitmentPage](https://user-images.githubusercontent.com/43654264/93803077-2dad9300-fbf9-11ea-8623-81cf0d045473.JPG)
+
+
+*****
+## Neutral Tone
+![dempneutral](https://user-images.githubusercontent.com/43654264/93823124-25b01c00-fc16-11ea-8d10-a7200493d1ce.JPG)
+
+
+*****
+## Positive Tone
+![demohappydog](https://user-images.githubusercontent.com/43654264/93823053-04e7c680-fc16-11ea-9a4b-ef73c927f4b2.JPG)
+
 
 *****
 ## Negative Tone
 ![image](https://user-images.githubusercontent.com/43654264/93034014-7eb3fa80-f5ed-11ea-9b19-c5407f63ae3c.png)
-
-*****
-## Neutral Tone
-![image](https://user-images.githubusercontent.com/43654264/93034141-ecf8bd00-f5ed-11ea-81c2-002089c362ee.png)
-
-*****
-## Positive Tone
-![image](https://user-images.githubusercontent.com/43654264/93034275-68f30500-f5ee-11ea-80c3-dd851285a6ca.png)
-
-
-
